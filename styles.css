@@ -1,0 +1,138 @@
+/* Custom styles for the contact form */
+body {
+  background: linear-gradient(135deg, #F4F4F4 0%, #e0eafc 100%);
+  min-height: 100vh;
+}
+
+.contact-container {
+  max-width: 500px;
+  margin: 60px auto;
+}
+
+.card {
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(44,62,80,0.10);
+  background: #fff;
+  border: 1px solid #F4F4F4;
+}
+
+.card-title {
+  font-weight: 700;
+  color: #2C3E50;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:visited {
+  background: #4ABDAC;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background 0.2s, box-shadow 0.2s;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(76, 189, 172, 0.15);
+}
+
+.btn-primary:hover {
+  background: #41a193;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.13);
+}
+
+.form-control:focus {
+  background: #F4F4F4;
+  border-color: #F7B733;
+  box-shadow: 0 0 0 0.2rem rgba(247, 183, 51, 0.15);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #2C3E50;
+}
+
+textarea.form-control {
+  background: #F4F4F4;
+  border-radius: 8px;
+}
+
+input.form-control {
+  background: #F4F4F4;
+  border-radius: 8px;
+}
+
+.invalid-feedback {
+  color: #FC4A1A;
+}
+
+.snackbar {
+  visibility: hidden;
+  min-width: 260px;
+  max-width: 95%;
+  margin: 0 auto 18px auto;
+  background: #43e97b;
+  color: #fff;
+  text-align: center;
+  border-radius: 16px;
+  padding: 16px 32px 16px 20px;
+  position: relative;
+  z-index: 10;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 6px 24px rgba(67,233,123,0.18), 0 1.5px 6px rgba(44,62,80,0.10);
+  opacity: 0;
+  transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+  border: 2px solid #43e97b;
+  display: none;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  outline: 2px solid #fff;
+}
+
+.snackbar::before {
+  content: '\2714';
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 1.3em;
+  vertical-align: middle;
+  color: #4ABDAC;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(67,233,123,0.12);
+}
+
+.snackbar.show {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  transform: translateY(0);
+  animation: snackbar-pop 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes snackbar-pop {
+  0% { transform: translateY(-30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 576px) {
+  .contact-container {
+    margin: 20px 8px;
+  }
+
+  .snackbar {
+    font-size: 0.98rem;
+    padding: 10px 10px 10px 10px;
+  }
+  .snackbar::before {
+    width: 22px;
+    height: 22px;
+    font-size: 1em;
+    line-height: 22px;
+    margin-right: 7px;
+  }
+}
