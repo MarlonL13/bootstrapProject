@@ -4,6 +4,11 @@ body {
   min-height: 100vh;
 }
 
+nav,footer{
+    background: #4ABDAC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .contact-container {
   max-width: 500px;
   margin: 60px auto;
