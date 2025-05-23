@@ -11,27 +11,27 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark navbar-expand-sm sticky-top d-flex justify-content-end">
+  <nav class="navbar navbar-dark navbar-expand-sm sticky-top d-flex justify-content-end shadow-lg"
+    style="background: linear-gradient(90deg, #4ABDAC 60%, #F7B733 100%);">
     <div class="container-fluid">
-      <a href="./index.html" class="navbar-brand d-flex">
-        <i class="bi bi-airplane-engines-fill fst-normal"> MEF Viagens</i>
+      <a href="./index.html" class="navbar-brand d-flex align-items-center gap-2">
+        <i class="bi bi-airplane-engines-fill fs-3"></i>
+        <span class="fw-bold fs-4">MEF Viagens</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
-        <div class="navbar-nav">
-          <a href="./index.html" class="nav-link">Inicio</a>
-          <a href="./sobre.html" class="nav-link active">Sobre</a>
-          <a href="./contato.html" class="nav-link">Contato</a>
+        <div class="navbar-nav gap-2">
+          <a href="./index.html" class="nav-link fw-semibold">Inicio</a>
+          <a href="./sobre.html" class="nav-link active fw-semibold">Sobre</a>
+          <a href="./contato.html" class="nav-link fw-semibold">Contato</a>
         </div>
       </div>
     </div>
   </nav>
   <header class="text-center my-5">
-    <h1 class="display-5 fw-bold" style="color: #4abdac">
-      Sobre a MEF Viagens
-    </h1>
+    <h1 class="display-5 fw-bold text-gradient">Sobre a MEF Viagens</h1>
     <p class="lead">Descubra o mundo do seu jeito.</p>
   </header>
 
@@ -89,14 +89,30 @@
             </li>
             <li class="mb-1">Suporte antes, durante e depois da viagem</li>
           </ul>
-          <a href="./contato.html" class="btn btn-primary w-100 py-2" style="font-weight: 600; letter-spacing: 1px">Fale
+          <a href="./contato.html" class="btn btn-primary w-100 py-2"
+            style="font-weight: 600; letter-spacing: 1px">Fale
             com um consultor</a>
         </div>
       </div>
     </div>
   </div>
-  <footer class="text-white text-center py-3 mt-5">
-    &copy; 2025 MEF Viagens. Todos os direitos reservados.
+  <footer class="text-white text-center py-4 mt-5"
+    style="background: linear-gradient(90deg, #4ABDAC 60%, #F7B733 100%); box-shadow: 0 -2px 24px rgba(44,62,80,0.10);">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-md-start mb-2 mb-md-0">
+          <span class="fw-bold">&copy; 2025 MEF Viagens.</span> Todos os direitos reservados.
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="https://www.instagram.com/" class="text-white me-3 fs-4" target="_blank" rel="noopener"
+            title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/" class="text-white me-3 fs-4" target="_blank" rel="noopener"
+            title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/" class="text-white fs-4" target="_blank" rel="noopener"
+            title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- Import dos script bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

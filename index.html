@@ -12,45 +12,56 @@
 <!-- Conteudo da pagina -->
 
 <body>
-  <nav class="navbar navbar-dark navbar-expand-sm sticky-top d-flex justify-content-end">
+  <nav class="navbar navbar-dark navbar-expand-sm sticky-top d-flex justify-content-end shadow-lg"
+    style="background: linear-gradient(90deg, #4ABDAC 60%, #F7B733 100%);">
     <div class="container-fluid">
-      <a href="./index.html" class="navbar-brand d-flex">
-        <i class="bi bi-airplane-engines-fill fst-normal"> MEF Viagens</i>
+      <a href="./index.html" class="navbar-brand d-flex align-items-center gap-2">
+        <i class="bi bi-airplane-engines-fill fs-3"></i>
+        <span class="fw-bold fs-4">MEF Viagens</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
-        <div class="navbar-nav">
-          <a href="./index.html" class="nav-link active">Inicio</a>
-          <a href="./sobre.html" class="nav-link">Sobre</a>
-          <a href="./contato.html" class="nav-link">Contato</a>
+        <div class="navbar-nav gap-2">
+          <a href="./index.html" class="nav-link active fw-semibold">Inicio</a>
+          <a href="./sobre.html" class="nav-link fw-semibold">Sobre</a>
+          <a href="./contato.html" class="nav-link fw-semibold">Contato</a>
         </div>
       </div>
     </div>
   </nav>
   <div class="container py-5">
-    <div id="ads" class="carousel slide" data-bs-ride="carousel">
-
+    <div id="ads" class="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#ads" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#ads" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#ads" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-
-      <div class="carousel-inner rounded shadow-lg overflow-hidden">
-        <div class="carousel-item active" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3500">
           <img src="./public/img1.jpeg" class="d-block w-100 carousel-img" alt="Imagem 1">
+          <div class="carousel-caption custom-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+            <h5 class="fw-bold text-warning">Descubra Destinos Incríveis</h5>
+            <p class="mb-0 text-light">Viaje com conforto, segurança e experiências únicas.</p>
+          </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="3500">
           <img src="./public/img2.jpeg" class="d-block w-100 carousel-img" alt="Imagem 2">
+          <div class="carousel-caption custom-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+            <h5 class="fw-bold text-warning">Pacotes Personalizados</h5>
+            <p class="mb-0 text-light">Monte sua viagem do seu jeito, com consultoria especializada.</p>
+          </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="3500">
           <img src="./public/img3.jpeg" class="d-block w-100 carousel-img" alt="Imagem 3">
+          <div class="carousel-caption custom-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+            <h5 class="fw-bold text-warning">Experiências Memoráveis</h5>
+            <p class="mb-0 text-light">Transforme sonhos em realidade com a MEF Viagens.</p>
+          </div>
         </div>
       </div>
-
       <button class="carousel-control-prev" type="button" data-bs-target="#ads" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Anterior</span>
@@ -59,108 +70,122 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Próximo</span>
       </button>
-
     </div>
   </div>
-
   <div class="container my-5">
-    <h1 class="text-center mb-4">Conheça Nossos Pacotes de Viagem</h1>
+    <h1 class="text-center mb-4 display-5 fw-bold text-gradient">Conheça Nossos Pacotes de Viagem</h1>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- Card 1 -->
       <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ757Ltja0TsW6m3BdpEiZkxNpIou25JCwmhQ&s"
-            class="card-img-top" alt="Paris" />
+        <div class="card h-100 shadow-lg border-0 position-relative overflow-hidden">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ757Ltja0TsW6m3BdpEiZkxNpIou25JCwmhQ&s" class="card-img-top"
+            alt="Paris" />
           <div class="card-body">
-            <h5 class="card-title">Paris</h5>
-            <p class="card-text">
-              As principais vantagens de comprar um pacote para Paris são: obter desconto significativo na sua viagem
-              combinando voo + hotel, incluir outros produtos.
-            </p>
+            <h5 class="card-title fw-bold text-primary">Paris</h5>
+            <p class="card-text">Desconto exclusivo combinando voo + hotel. Viva o romance e a cultura francesa.</p>
           </div>
-          <button class="btn btn-outline-primary w-100 rounded-0"><i class="bi bi-bag"></i> comprar</button>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-outline-primary w-100 rounded-pill py-2 fw-semibold"><i class="bi bi-bag"></i>
+              Comprar</button>
+          </div>
+          <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 fs-6 shadow">+ Popular</span>
         </div>
       </div>
+      <!-- Card 2 -->
       <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img
-            src="https://forbes.com.br/wp-content/uploads/2022/10/9_Life_Destinos-de-viagem-para-conhecer-em-2023.jpg."
-            class="card-img-top" alt="Florianópolis" />
+        <div class="card h-100 shadow-lg border-0 position-relative overflow-hidden">
+          <img src="https://forbes.com.br/wp-content/uploads/2022/10/9_Life_Destinos-de-viagem-para-conhecer-em-2023.jpg." class="card-img-top"
+            alt="Florianópolis" />
           <div class="card-body">
-            <h5 class="card-title">Florianópolis</h5>
-            <p class="card-text">
-              As principais vantagens de comprar um pacote para Florianópolis são: obter desconto significativo na sua
-              viagem combinando voo + hotel, incluir outros produtos.
-            </p>
+            <h5 class="card-title fw-bold text-primary">Florianópolis</h5>
+            <p class="card-text">Pacotes especiais para praias paradisíacas e cultura catarinense.</p>
           </div>
-          <button class="btn btn-outline-primary w-100 rounded-0"><i class="bi bi-bag"></i> comprar</button>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-outline-primary w-100 rounded-pill py-2 fw-semibold"><i class="bi bi-bag"></i>
+              Comprar</button>
+          </div>
         </div>
       </div>
+      <!-- Card 3 -->
       <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img
-            src="https://content.r9cdn.net/rimg/dimg/54/ed/eb0f657a-lm-159298-16d6b936db3.jpg?crop=true&width=1020&height=498"
-            class="card-img-top" alt="Rio de Janeiro" />
+        <div class="card h-100 shadow-lg border-0 position-relative overflow-hidden">
+          <img src="https://content.r9cdn.net/rimg/dimg/54/ed/eb0f657a-lm-159298-16d6b936db3.jpg?crop=true&width=1020&height=498" class="card-img-top"
+            alt="Rio de Janeiro" />
           <div class="card-body">
-            <h5 class="card-title">Rio de Janeiro</h5>
-            <p class="card-text">
-              As principais vantagens de comprar um pacote para Rio de Janeiro são: obter desconto significativo na sua
-              viagem combinando voo + hotel, incluir outros produtos.
-            </p>
+            <h5 class="card-title fw-bold text-primary">Rio de Janeiro</h5>
+            <p class="card-text">Aproveite descontos e viva o melhor do Rio com segurança e alegria.</p>
           </div>
-          <button class="btn btn-outline-primary w-100 rounded-0"><i class="bi bi-bag"></i> comprar</button>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-outline-primary w-100 rounded-pill py-2 fw-semibold"><i class="bi bi-bag"></i>
+              Comprar</button>
+          </div>
         </div>
       </div>
+      <!-- Card 4 -->
       <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img
-            src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-roma-capa2019-01-820x430.jpg"
-            class="card-img-top" alt="Roma" />
+        <div class="card h-100 shadow-lg border-0 position-relative overflow-hidden">
+          <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-roma-capa2019-01-820x430.jpg" class="card-img-top"
+            alt="Roma" />
           <div class="card-body">
-            <h5 class="card-title">Roma</h5>
-            <p class="card-text">
-              As principais vantagens de comprar um pacote para Roma são: obter desconto significativo na sua viagem
-              combinando voo + hotel, incluir outros produtos.
-            </p>
+            <h5 class="card-title fw-bold text-primary">Roma</h5>
+            <p class="card-text">História, arte e gastronomia italiana em um só pacote exclusivo.</p>
           </div>
-          <button class="btn btn-outline-primary w-100 rounded-0"><i class="bi bi-bag"></i> comprar</button>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-outline-primary w-100 rounded-pill py-2 fw-semibold"><i class="bi bi-bag"></i>
+              Comprar</button>
+          </div>
         </div>
       </div>
+      <!-- Card 5 -->
       <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img
-            src="https://www.universal-assistance.com/br-blog/wp-content/uploads/2022/03/seguro-viagem-eua-blog-ua-br-1.jpg"
-            class="card-img-top" alt="EUA" />
+        <div class="card h-100 shadow-lg border-0 position-relative overflow-hidden">
+          <img src="https://www.universal-assistance.com/br-blog/wp-content/uploads/2022/03/seguro-viagem-eua-blog-ua-br-1.jpg" class="card-img-top"
+            alt="EUA" />
           <div class="card-body">
-            <h5 class="card-title">EUA</h5>
-            <p class="card-text">
-              As principais vantagens de comprar um pacote para EUA são: obter desconto significativo na sua viagem
-              combinando voo + hotel, incluir outros produtos.
-            </p>
+            <h5 class="card-title fw-bold text-primary">EUA</h5>
+            <p class="card-text">Explore cidades icônicas e parques temáticos com total suporte.</p>
           </div>
-          <button class="btn btn-outline-primary w-100 rounded-0"><i class="bi bi-bag"></i> comprar</button>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-outline-primary w-100 rounded-pill py-2 fw-semibold"><i class="bi bi-bag"></i>
+              Comprar</button>
+          </div>
         </div>
       </div>
+      <!-- Card 6 -->
       <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img
-            src="https://images.travelclass.tur.br/upload/2017/04/a-bela-plaza-de-espana-sevilha-espanha-1-1275x850.webp"
-            class="card-img-top" alt="Espanha" />
+        <div class="card h-100 shadow-lg border-0 position-relative overflow-hidden">
+          <img src="https://images.travelclass.tur.br/upload/2017/04/a-bela-plaza-de-espana-sevilha-espanha-1-1275x850.webp" class="card-img-top"
+            alt="Espanha" />
           <div class="card-body">
-            <h5 class="card-title">Espanha</h5>
-            <p class="card-text">
-              As principais vantagens de comprar um pacote para Espanha são: obter desconto significativo na sua viagem
-              combinando voo + hotel, incluir outros produtos.
-            </p>
+            <h5 class="card-title fw-bold text-primary">Espanha</h5>
+            <p class="card-text">Cultura vibrante, festas e paisagens inesquecíveis. Viva a Espanha!</p>
           </div>
-          <button class="btn btn-outline-primary w-100 rounded-0"><i class="bi bi-bag"></i> comprar</button>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-outline-primary w-100 rounded-pill py-2 fw-semibold"><i class="bi bi-bag"></i>
+              Comprar</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <footer class="text-white text-center py-3 mt-5">
-    &copy; 2025 MEF Viagens. Todos os direitos reservados.
+  <footer class="text-white text-center py-4 mt-5"
+    style="background: linear-gradient(90deg, #4ABDAC 60%, #F7B733 100%); box-shadow: 0 -2px 24px rgba(44,62,80,0.10);">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-md-start mb-2 mb-md-0">
+          <span class="fw-bold">&copy; 2025 MEF Viagens.</span> Todos os direitos reservados.
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="https://www.instagram.com/" class="text-white me-3 fs-4" target="_blank" rel="noopener"
+            title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/" class="text-white me-3 fs-4" target="_blank" rel="noopener"
+            title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/" class="text-white fs-4" target="_blank" rel="noopener"
+            title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
   </footer>
-
   <!-- Import dos script bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

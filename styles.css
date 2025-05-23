@@ -239,6 +239,14 @@ input.form-control {
   font-size: 1.1em;
 }
 
+.text-gradient {
+  background: linear-gradient(90deg, #4ABDAC 60%, #F7B733 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 @media (max-width: 576px) {
   .contact-container {
     margin: 20px 8px;
